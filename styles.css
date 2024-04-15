@@ -1,0 +1,182 @@
+/*
+ * Custom CSS
+ */
+
+:root {
+  --bs-body-bg: var(--bs-white-100);
+}
+
+.logo {
+  width: 200px;
+  /* Set the width of the logo image */
+  height: auto;
+  /* Set the height of the logo image to be proportional to its width */
+}
+
+.fatfactory {
+  max-width: 50%;
+  /* Set the width of the logo image */
+  height: auto;
+  /* Set the height of the logo image to be proportional to its width */
+}
+
+.no-rounded {
+  border-radius: 0 !important;
+}
+
+.index-thumbnail {
+  width: 400px;
+  /* Set the width of the logo image */
+  height: 400px;
+  /* Set the height of the logo image to be proportional to its width */
+  object-fit: fill;
+}
+
+.img-fluid {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel-item {
+  height: 500px;
+  width: 100%;
+}
+
+iframe.instagram-media {
+  max-width: 100% !important;
+  width: 500% !important;
+  min-width: auto !important;
+}
+
+.product_detail_preview {
+  width: 120%;
+  /* Set the width of the logo image */
+  height: 100%;
+  /* Set the height of the logo image to be proportional to its width */
+  object-fit: fill;
+}
+
+.fw-bold-custom{
+  font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+h5,
+h6 .thumbnail-price,
+.custom-text,
+.card-text,
+.breadcrumb-text {
+  font-family: 'Work Sans', sans-serif !important;
+}
+
+.btn-outline-secondary {
+  --bs-btn-color: var(--bs-black);
+  /* --#{$prefix}btn-border-width: #{$btn-border-width}; */
+}
+
+.hr-custom {
+  width: 20%;
+  border: 1px solid #000;
+}
+
+.splide__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.splide__slide {
+  opacity: 0.6;
+}
+
+.splide__slide.is-active {
+  opacity: 1;
+}
+
+.index-img {
+  width: 670px;
+  height: 600px;
+  object-fit: cover;
+}
+
+.square-smaller {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+}
+
+.square-smaller::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.square-smaller img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+@media (min-width: 992px) { /*lg*/
+  .custom-right {
+    right: 10%;
+  }
+
+  .custom-left {
+    left: 10%;
+  }
+}
+
+@media (min-width: 768px) { /*md*/
+  .square {
+    position: relative;
+  }
+  
+  .square::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+  
+  .square img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+}
+
+@media (max-width: 767px) { /*sm*/
+  .square {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    margin-right: auto;
+  }
+  
+  .square::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+  
+  .square img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+
+
+  .square-smaller {
+    display: none;
+  }
+}
